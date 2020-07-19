@@ -1,0 +1,97 @@
+/* BOX MODEL - nastavíme intuitivnější box model (border-box) */
+html {
+  box-sizing: border-box;
+}
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+/*
+Bootstrap 4 breakpointy: 576px, 768px, 992px, 1200px
+xs: (max-width: 575px)
+sm: (min-width: 576px) and (max-width: 767px)
+md: (min-width: 768px) and (max-width: 991px)
+lg: (min-width: 992px) and (max-width: 1199px)
+xl: (min-width: 1200px)
+
+Barvy
+růžová: #c5308a
+světle šedá: #f0f0f0
+*/
+
+/* --- pod tuto čáru piš svoje CSS --------------------------------------- */
+
+body {
+  font-family: "Lora", serif;
+}
+
+a{
+  color: #f0f0f0;
+  text-decoration:none;
+}
+
+a:hover {
+  color: #f0f0f0;
+  text-decoration:none;
+}
+
+.nav-item:hover {
+  background-color: #c5308a;
+}
+
+.pruhAkce {
+  background-color: #c5308a;
+}
+
+.akce .procenta {
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.akce .popisSlevy {
+  font-size: 20px;
+}
+
+.kaderniceSection {
+  background-color: #f0f0f0;
+}
+
+.profilePic {
+  max-width: 50%;
+  padding: 2px;
+  border: 2px dotted #c5308a;
+}
+
+.jmenoKadernice {
+  font-weight: 700;
+  font-style: italic;
+}
+
+.picSluzba {
+  display: block;
+}
+
+.nazevSluzby {
+  font-size:20px;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.popisSluzby {
+  font-size: 14px;
+}
+
+.nadpis {
+  font-size: 40px;
+  font-style: italic;
+}
+.refSection {
+  background-color: #f0f0f0;
+}
+
+.refList {
+  font-size: 22px;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Bootstrap Grid</title>
+    <link rel="stylesheet" href="bootstrap.css" />
+    <!-- Bootstrap napojte tady-->
+
+    <!-- naše vlastní styly -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1>Bootstrap příklady</h1>
+
+    <h2 class="mt-5">První řada</h2>
+    <p>
+      Umísti následující dva odstavce do řady (row) a udělej z nich 2 stejně
+      široké sloupce (col) vedle sebe (každý zabírá polovinu šířky).
+    </p>
+
+    <div class="row">
+      <p class="col">První sloupec</p>
+      <p class="col">Druhý sloupec</p>
+    </div>
+
+    <h2 class="mt-5">Druhá řada</h2>
+    <p>
+      Umísti následující tři odstavce do řady (row) a udělej z nich 3 sloupce
+      vedle sebe (levý zabírá 2, prostřední 6, pravý 4 jednotky).
+    </p>
+    <div class="container">
+      <div class="row">
+        <p class="col-2">První sloupec</p>
+        <p class="col-6">Druhý sloupec</p>
+        <p class="col-4">Třetí sloupec</p>
+      </div>
+    </div>
+    <h2 class="mt-5">Bonus</h2>
+    <ul>
+      <li>
+        Sloupce nemusí být vždy stejně široké, vyzkoušej různé šířky sloupců.
+      </li>
+      <li>Co když součet šířek sloupců není 12?</li>
+    </ul>
+    <div class="container-fluid">
+      <div class="row">
+        <p class="col-12 col-sm-7 col-md-3 col-lg-5 col-xl-2 ">První sloupec</p>
+        <p class="col-12 col-sm-4 col-md-6 col-lg-2 col-xl-1 ">Druhý sloupec</p>
+        <p class="col-12 col-sm-1 col-md-3 col-lg-5 col-xl-9 ">Třetí sloupec</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Kadeřnictví Scissors</title>
+    <meta
+      name="description"
+      content="Vzorový projekt pro Czechitas workshop Tvořím Web: Bootstrap. Není to opravdové kadeřnictví!"
+    />
+
+    <!-- Bootstrap styly napojte tady-->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- naše CSS styly -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora:400,700,700i&display=swap&subset=latin-ext"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Hlavicka -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0 fixed-top">
+      <a class="navbar-brand p-2" href="#">Kadeřnictví Scissors</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse " id="navbarNav">
+        <ul class="navbar-nav ml-auto text-right">
+          <li class="nav-item p-2 m-0t">
+            <a href="#kadernice">Kadeřnice</a>
+          </li>
+          <li class="nav-item p-2 m-0">
+            <a href="#sluzby">Služby</a>
+          </li>
+          <li class="nav-item p-2 m-0">
+            <a href="#reference">Řekli o nás</a>
+          </li>
+          <li class="nav-item p-2 m-0">
+            <a href="#fotogalerie">Fotogalerie</a>
+          </li>
+          <li class="nav-item p-2 m-0">
+            <a href="#kontakt">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Obrazek -->
+    <div id="hairCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            class="d-block w-100"
+            src="images/carousel1.jpg"
+            alt="Kadeřnictví"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="images/carousel2.jpg"
+            alt="Krasny kluk"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="images/carousel3.jpg"
+            alt="Krasna holka"
+          />
+        </div>
+      </div>
+
+      <a
+        class="carousel-control-prev"
+        href="#hairCarousel"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#hairCarousel"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <!-- Akce, novinky -->
+    <div class="pruhAkce">
+      <div class="container">
+        <section class="akce row pt-4 pb-3">
+          <h2 class="procenta col-md-4 align-self-center text-white">
+            Akce -30&nbsp;%
+          </h2>
+          <p
+            class="popisSlevy col-md-8 align-self-center  text-left text-white"
+          >
+            Květen je měsíc vlasů. Přijď ho s námi oslavit a
+            <strong>získej slevu 30&nbsp;%</strong> na všechny naše služby.
+            Ohrom své přátele novým účesem.
+          </p>
+        </section>
+      </div>
+    </div>
+    <!-- Kadernice -->
+
+    <div class="kaderniceSection">
+      <div class="container">
+        <h2 id="kadernice" class="nadpis align-self-center text-center p-4">
+          Naše kadeřnice
+        </h2>
+        <section class="row kaderniceList">
+          <div class="helca col-md-4 p-3">
+            <img
+              class="img-fluid  profilePic rounded-circle mx-auto d-block align-self-center mw-50"
+              src="images/kadernice-helena.jpg"
+              alt="Helena Králíková"
+            />
+            <div class="helcaPopis mt-3 text-center">
+              <h3 class="jmenoKadernice">Helena Králíková</h3>
+              <p>
+                Kadeřnice s více než patnáctiletou praxí, jedna ze zakladatelek
+                české kadeřnické akademie. Specialistka na exotické účesy pro
+                zvláštní příležitosti.
+              </p>
+            </div>
+          </div>
+
+          <div class="elca col-md-4 p-3">
+            <img
+              class="img-fluid profilePic rounded-circle mx-auto d-block align-self-center mw-50 "
+              src="images/kadernice-eliska.jpg"
+              alt="Eliška Dvořáková"
+            />
+            <div class="elcaPopis mt-3 text-center">
+              <h3 class="jmenoKadernice">Eliška Dvořáková</h3>
+              <p>
+                Držitelka několika národních i mezinárodních ocenění, mimo jiné
+                i Kadeřnice roku a Účes roku. Spolupracuje s předními českými i
+                světovými kadeřníky.
+              </p>
+            </div>
+          </div>
+
+          <div class="jarca col-md-4 p-3">
+            <img
+              class="img-fluid  profilePic rounded-circle mx-auto d-block align-self-center mw-50"
+              src="images/kadernice-jarmila.jpg"
+              alt="Jarmila Prokopová"
+            />
+
+            <div class="jarcaPopis mt-3 text-center">
+              <h3 class="jmenoKadernice">Jarmila Prokopová</h3>
+              <p>
+                Specialistka na pánské a dětské střihy se zkušenostmi s česáním
+                módních přehlídek a vlasových show. Certifikovaná odbornice na
+                modeláž nehtů.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- konec #kadernice -->
+
+    <!-- Sluzby -->
+    <div class="SluzbySec">
+      <div class="container">
+        <h2 id="sluzby" class="nadpis text-center p-3">Služby</h2>
+        <section class="row">
+          <div class="col-6">
+            <div class="sluzbicka media">
+              <img
+                class="picSluzba d-block mt-auto mb-auto img-fluid mr-3"
+                src="images/sluzby-damske.svg"
+                width="100"
+                height="100"
+                alt="Dámské kadeřnictví"
+              />
+              <div>
+                <h3 class="nazevSluzby">Dámské kadeřnictví</h3>
+                <p class="popisSluzby">
+                  Moderní střihy, barvení vlasů, melírování, přelivy, svatební
+                  účesy, večerní účesy, preparace vlasů, trvalé, prodlužování a
+                  zhuštění vlasů, prodej připínacích pramenů, poradenství a
+                  prodej vlasové kosmetiky.
+                </p>
+              </div>
+            </div>
+            <div class="sluzbicka media">
+              <img
+                class="picSluzba d-block mt-auto mb-auto img-fluid mr-3"
+                src="images/sluzby-panske.svg"
+                width="100"
+                height="100"
+                alt="Pánské kadeřnictví"
+              />
+              <div>
+                <h3 class="nazevSluzby">Pánské kadeřnictví</h3>
+                <p class="popisSluzby">
+                  Střihy, zastřižení, střih strojkem, melírování, barvení vlasů,
+                  tonování šedivých vlasů, tvarování gelem, zastřižení vousů a
+                  knírů, masáž hlavy, poradenství, prodej vlasové pánské
+                  kosmetiky.
+                </p>
+              </div>
+            </div>
+            <div class="sluzbicka media">
+              <img
+                class="picSluzba d-block mt-auto mb-auto img-fluid mr-3"
+                src="images/sluzby-kosmetika.svg"
+                width="100"
+                height="100"
+                alt="Kosmetika"
+              />
+              <div>
+                <h3 class="nazevSluzby">Kosmetika a péče o pleť</h3>
+                <p class="popisSluzby">
+                  Ošetření pleti, masáže obličeje, úprava a barvení řas a obočí,
+                  líčení pro všechny příležitosti, depilace, manikůra,
+                  poradenství a prodej kosmetiky na domácí péči.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <h3 class="text-center jmenoKadernice">Ceník</h3>
+
+            <table class="table table-bordered">
+              <tbody>
+                <tr>
+                  <td>Dámské stříhání</td>
+                  <td>500&ndash;600&nbsp;Kč</td>
+                </tr>
+                <tr>
+                  <td>Pánské stříhání</td>
+                  <td>200&ndash;300&nbsp;Kč</td>
+                </tr>
+                <tr>
+                  <td>Stříhání strojkem</td>
+                  <td>80&nbsp;Kč</td>
+                </tr>
+                <tr>
+                  <td>Stylování účesu</td>
+                  <td>dle náročnosti</td>
+                </tr>
+                <tr>
+                  <td>Barvení, melírování</td>
+                  <td>350&ndash;500&nbsp;Kč</td>
+                </tr>
+                <tr>
+                  <td>Líčení</td>
+                  <td>250&nbsp;Kč</td>
+                </tr>
+                <tr>
+                  <td>Modeláž nehtů</td>
+                  <td>350&nbsp;Kč</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- konec #sluzby -->
+
+    <!-- Reference / Rekli o nas -->
+    <div class="refSection">
+      <div class="container">
+        <h2 id="reference" class="nadpis text-center p-4">Řekli o nás</h2>
+        <section class="refList row">
+          <div class="luca col-md-6 media">
+            <img
+              class="rounded-circle mr-5 align-self-center"
+              src="images/reference-lucie.jpg"
+              alt="Lucie Nováková"
+            />
+            <p class="media-body align-self-center">
+              Kadeřnictví Scissors je v Praze prostě nejlepší. Vím to s
+              jistotou, protože normálně mám vlasy jako dikobraz a po ostřihání
+              vypadám vždy jako supermodelka.<br />
+              <em>&mdash; Lucie Nováková</em>
+            </p>
+          </div>
+
+          <div class="kloti col-md-6 media">
+            <img
+              class="rounded-circle mr-5 align-self-center"
+              src="images/reference-klotilda.jpg"
+              alt="Klotilda Marnotratná"
+            />
+            <p class="media-body align-self-center">
+              Salón jsem doposud navštívila dvakrát a vždy jsem byla maximálně
+              spokojena s přístupem, prostředím, službami. Děkuji.<br />
+              <em>&mdash; Klotilda Marnotratná</em>
+            </p>
+          </div>
+
+          <div class="jaja col-md-6 media">
+            <img
+              class="rounded-circle mr-5 align-self-center"
+              src="images/reference-jana.jpg"
+              alt="Jana Vostrá"
+            />
+            <p class="media-body align-self-center">
+              Helena je mojí kadeřnicí už několik let a dobrý kadeřník se
+              nemění! I přes profesionální služby vás příjemně překvapí velmi
+              dostupná cena.<br />
+              <em>&mdash; Jana Vostrá</em>
+            </p>
+          </div>
+
+          <div class="liba col-md-6 media">
+            <img
+              class="rounded-circle mr-5 align-self-center"
+              src="images/reference-libor.jpg"
+              alt="Libor Kohout"
+            />
+            <p class="media-body align-self-center">
+              Bez čekání, za 30 minut, super ostříhán. Vracím se pravidelně a
+              rád.<br />
+              <em>&mdash; Libor Kohout</em>
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- konec #reference -->
+
+    <!-- Fotogalerie -->
+
+    <h2 id="fotogalerie">Fotogalerie</h2>
+
+    <img src="images/foto01.jpg" alt="Foto 01" />
+    <img src="images/foto02.jpg" alt="Foto 02" />
+    <img src="images/foto03.jpg" alt="Foto 03" />
+    <img src="images/foto04.jpg" alt="Foto 04" />
+    <img src="images/foto05.jpg" alt="Foto 05" />
+    <img src="images/foto06.jpg" alt="Foto 06" />
+    <img src="images/foto07.jpg" alt="Foto 07" />
+    <img src="images/foto08.jpg" alt="Foto 08" />
+    <img src="images/foto09.jpg" alt="Foto 09" />
+    <img src="images/foto10.jpg" alt="Foto 10" />
+    <img src="images/foto11.jpg" alt="Foto 11" />
+    <img src="images/foto12.jpg" alt="Foto 12" />
+
+    <!-- konec #fotogalerie -->
+
+    <!-- Kontakt -->
+
+    <h2 id="kontakt">Kontakt</h2>
+
+    <h3>Otevírací doba</h3>
+
+    <table>
+      <tbody>
+        <tr>
+          <td>Pondělí&ndash;čtvrtek</td>
+          <td>7.00&ndash;18.00</td>
+        </tr>
+        <tr>
+          <td>Pátek</td>
+          <td>10.00&ndash;19.00</td>
+        </tr>
+        <tr>
+          <td>Sobota</td>
+          <td>10.00&ndash;15.00</td>
+        </tr>
+        <tr>
+          <td>Neděle</td>
+          <td>zavřeno</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Kadeřnictví Scissors</h3>
+    <p>
+      Pouliční třída 13/2047<br />
+      Praha 1, 101 00
+    </p>
+
+    <p><a href="mailto:ahoj@scissors.cz">ahoj@scissors.cz</a></p>
+
+    <p>Telefonické objednávky:<br />+420 123 456 789</p>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20480.33164028703!2d14.39369546845803!3d50.08551071335367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x75209738d1d3b126!2sCharles+Bridge!5e0!3m2!1sen!2scz!4v1464236145887"
+      width="100%"
+      height="300"
+      frameborder="0"
+      style="border:0"
+      allowfullscreen
+    ></iframe>
+
+    <!-- konec #kontakt -->
+
+    <!-- Paticka -->
+
+    <p>&copy;2017, Czechitas. Vyrobeno pro workshop Tvořím web: Bootstrap.</p>
+
+    <ul>
+      <li><a href="https://www.facebook.com/czechitas">Facebook</a></li>
+      <li><a href="https://twitter.com/czechitas">Twitter</a></li>
+    </ul>
+
+    <p>
+      Photos from Flickr.com under Creative Commons license, courtesy of
+      <a href="https://www.flickr.com/photos/mike-owens/">Mike Owens</a>,
+      <a href="https://www.flickr.com/photos/colourauthority/">Denise Mahoney</a
+      >,
+      <a href="https://www.flickr.com/photos/apachesenzala/">Apaché Senzala</a>,
+      <a href="https://www.flickr.com/photos/rtdphotography/">Ray Dumas</a>,
+      <a href="https://www.flickr.com/photos/remyhairweft/">Lucy He</a>,
+      <a href="https://www.flickr.com/photos/aliciacody/"
+        >Alicia Hotovec-Ellis</a
+      >, <a href="https://www.flickr.com/photos/jdaykin/">Jerrz Daykin</a>,
+      <a href="https://www.flickr.com/photos/paladin27/">Paladin 27</a>
+    </p>
+
+    <!-- konec #paticka -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
